@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Guitar Teacher</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="login_activity_label">Login</string>
+    <string name="sign_up_activity_label">Sign Up</string>
+    <string name="welcome_screen_activity_label">Welcome</string>
+    <string name="main_activity_label">Home</string>
+    <string name="edit_profile_activity_label">Edit Profile</string>
+    <string name="learn_activity_label">Learn Activity</string>
+    <string name="progress_tracker_activity_label">Progress Tracker</string>
+    <string name="explore_guitars_activity_label">Explore Guitars</string>
+    <string name="guitar_details_activity_label">Guitar Details</string>
+    <string name="home">Home</string>
+
+    <!-- Title Activities -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_welcome_screen">Welcome</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_learn">LearnActivity</string>
+    <string name="title_activity_progress_tracker">ProgressTrackerActivity</string>
+    <string name="title_activity_explore_guitars">ExploreGuitarsActivity</string>
+    <string name="title_activity_guitar_images_fragment">GuitarImagesFragment</string>
+    <string name="title_activity_guitar_details">GuitarDetailsActivity</string>
+    <string name="title_activity_find_a_shop">MapActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+
+    <!-- Menu strings -->
+    <string name="menu_back">Back</string>
+    <string name="log_out">Logout</string>
+    <string name="delete_profile">Delete Profile</string>
+
+    <!-- MainActivity strings -->
+    <string name="learn_to_play">Learn To Play</string>
+    <string name="explore_guitars">Explore Guitars</string>
+    <string name="find_a_shop">Find A Music Store</string>
+    <string name="welcome">Welcome,</string>
+    <string name="guitar_image">Image of a Guitar in Background</string>
+    <string name="successful_profile_delete">Profile successfully deleted</string>
+    <string name="failed_profile_delete">Profile failed to delete</string>
+
+    <!-- EditProfileActivity strings -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="successful_edit">Profile was successfully edited</string>
+
+    <!-- Learn & Progress Tab -->
+    <string name="learn">Learn</string>
+    <string name="progress">Progress</string>
+
+    <!-- LearnActivity strings -->
+    <string name="play">Play</string>
+    <string name="completed">Completed</string>
+    <string name="record">Record</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="mark_completed">Mark Completed</string>
+    <string name="mark_uncompleted">Mark Uncompleted</string>
+    <string name="select_a_chord">Select a Chord</string>
+    <string name="mic_permissions">Microphone Permissions</string>
+    <string name="mic_permission_snackbar">Would you like to give permission to
+        record audio?
+    </string>
+    <string name="mic_permission_reason">We need permission to access your microphone
+        in order to record audio
+    </string>
+    <string name="mic_permission_denied">You can\'t use record function without
+        microphone permissions
+    </string>
+    <string name="file_saved_at">File was saved at: </string>
+    <string name="external_write_permission_snackbar">Would you like to give permission to save
+        audio to external storage?
+    </string>
+    <string name="external_write_permission_reason">We need permission to access your external
+        storage so you can access the audio file when you\'ve finished recording
+    </string>
+
+    <!-- ProgressTrackerActivity strings -->
+    <string name="progress_tracker">Progress Tracker</string>
+    <string name="learn_new">Learn New</string>
+    <string name="chords_learned">Chords Learned</string>
+    <string name="chord_description">Chord Desc</string>
+    <string name="chord_diagram">Chord Diagram</string>
+
+    <!-- ExploreGuitarsActivity strings -->
+    <string name="explore">Explore</string>
+    <string name="see_details">See Details</string>
+    <string name="snackbar_swipe_message">Swipe right to see more guitars</string>
+
+    <!-- GuitarDetailsActivity strings-->
+    <string name="guitar_details">Guitar Details</string>
+    <string name="details">Details:</string>
+    <string name="brand">Brand:</string>
+    <string name="model">Model:</string>
+    <string name="type">Type:</string>
+    <string name="number_of_frets">Number of Frets:</string>
+    <string name="year_invented">Year Invented:</string>
+    <string name="price">Price:</string>
+
+    <!-- LoginActivity strings-->
+    <string name="login">Login</string>
+    <string name="send_verification">Send Verification Code</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="verify">Verify Number</string>
+    <string name="verification_failed">The verification code entered doesn\'t match.
+        Please retry.
+    </string>
+    <string name="invalid_credentials">The credentials entered are invalid, please retry</string>
+    <string name="verification_sent">Verification code has been sent</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="blank_phone_number">Please enter a phone number</string>
+    <string name="number_format">Phone Number: 6505551212</string>
+    <string name="is_this_the_problem">Is this the problem?</string>
+    <string name="sign_up_required">Please create an account before continuing</string>
+
+    <!-- SignUpActivity strings -->
+    <string name="account_registration">Account Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="successful_sign_up">User account creation was successful,
+        thanks for joining!
+    </string>
+
+    <!-- SignUpActivity error messages -->
+    <string name="first_name_error">Please enter a valid first name</string>
+    <string name="last_name_error">Please enter a valid last name</string>
+    <string name="phone_number_error">Phone number must be in format: 6505551212</string>
+    <string name="phone_number_taken_error">Sorry that phone number is already associated
+        with an account, please use a different phone number</string>
+    <string name="username_invalid_error">Please enter a valid username</string>
+    <string name="username_taken_error">Sorry that username is already associated with an
+        account, please choose a different username
+    </string>
+    <string name="password_criteria_error">Password must have at least one capital letter,
+        one lowercase letter, one number, a special symbol and be at least 8 characters long
+    </string>
+    <string name="password_match_error">The passwords you entered don\'t match</string>
+    <string name="default_sign_up_error">An error occurred</string>
+    <string name="default_sql_user_insert_error">An error occurred in our database and user creation
+        was unsuccessful, please make sure all information is correct and try again
+    </string>
+
+    <!-- Guitar strings -->
+    <string name="les_paul">Gibson Les Paul</string>
+    <string name="strat">Fender Stratocaster</string>
+    <string name="prs">PRS Custom 24</string>
+    <string name="sg">Gibson SG</string>
+
+    <!-- Chord strings -->
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="g">G</string>
+    <string name="major">Maj</string>
+    <string name="minor">Min</string>
+    <string name="open">Open</string>
+    <string name="barre">Barre</string>
+    <string name="power">Power</string>
+
+    <!-- FindAShopActivity strings -->
+    <string name="permission_snackbar">Would you like to give permission to
+        see your current location on the map?
+    </string>
+    <string name="permission_reason">We would like permission to display your
+        location relative to the local music stores
+    </string>
+    <string name="permission_ok">OK</string>
+    <string name="no">NO</string>
+
+    <!-- Dialog strings -->
+    <string name="confirm_profile_delete">Confirm profile deletion</string>
+    <string name="profile_delete_question">Are you sure you want to delete your profile?</string>
+    <string name="yes">Yes</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927915474420",
+    "project_id": "guitarteacher-25a26",
+    "storage_bucket": "guitarteacher-25a26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927915474420:android:73fb5f6929adc0c270cda1",
+        "android_client_info": {
+          "package_name": "com.boudreau.guitarteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927915474420-qiqfs79vm3m5p9o4m665ckemiq72i9vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcT8xWsDVl7l4OHV3ozDSzal7XiTvrleM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927915474420-qiqfs79vm3m5p9o4m665ckemiq72i9vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

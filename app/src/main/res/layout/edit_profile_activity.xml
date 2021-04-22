@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ablEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GuitarTeacher.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bright_yellow"
+            app:popupTheme="@style/Theme.GuitarTeacher.PopupOverlay"
+            app:title="@string/edit_profile"
+            app:titleTextColor="@color/all_black" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/lblEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/edit_profile"
+        android:textColor="@color/oxford_blue"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ablEditProfile" />
+
+    <EditText
+        android:id="@+id/txtEditFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblEditProfile"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/lblEditProfile"
+        app:layout_constraintTop_toBottomOf="@+id/lblEditProfile" />
+
+    <EditText
+        android:id="@+id/txtEditLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEditFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEditFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditFirstName" />
+
+    <EditText
+        android:id="@+id/txtEditPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEditLastName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEditLastName"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditLastName" />
+
+    <EditText
+        android:id="@+id/txtEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEditPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEditPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPhoneNumber" />
+
+    <EditText
+        android:id="@+id/txtEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEditUsername"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEditUsername"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditUsername" />
+
+    <EditText
+        android:id="@+id/txtConfirmEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/oxford_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEditPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPassword" />
+
+    <TextView
+        android:id="@+id/lblEditErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/error_red"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtConfirmEditPassword"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/txtConfirmEditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmEditPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlEditCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/btnEditConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="@string/save_changes"
+        android:textColor="@color/oxford_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtConfirmEditPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlEditCenter"
+        app:layout_constraintTop_toBottomOf="@+id/lblEditErrorMessage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/btnEditCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/oxford_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEditCenter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtConfirmEditPassword"
+        app:layout_constraintTop_toBottomOf="@+id/lblEditErrorMessage"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

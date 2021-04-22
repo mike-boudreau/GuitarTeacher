@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="appBarLayout_guitar_details" type="id" />
+    <item name="imgGuitarDetailPic" type="id" />
+    <item name="lblModel" type="id" />
+    <item name="lblType" type="id" />
+    <item name="lblFrets" type="id" />
+    <item name="lblYearInvented" type="id" />
+    <item name="lblBrandInfo" type="id" />
+    <item name="lblModelInfo" type="id" />
+    <item name="lblTypeInfo" type="id" />
+    <item name="lblFretsInfo" type="id" />
+    <item name="lblYearInventedInfo" type="id" />
+    <item name="lblPriceInfo" type="id" />
+    <item name="lblPrice" type="id" />
+</resources>

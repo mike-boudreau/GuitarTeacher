@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ablLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GuitarTeacher.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bright_yellow"
+            app:popupTheme="@style/Theme.GuitarTeacher.PopupOverlay"
+            app:title="@string/login"
+            app:titleTextColor="@color/all_black" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="293dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/guitar_image"
+        android:src="@drawable/guitar_thumbnail_white_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGuitarTeacher" />
+
+    <TextView
+        android:id="@+id/lblGuitarTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textColor="@color/oxford_blue"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ablLogin" />
+
+    <EditText
+        android:id="@+id/txtPhoneNumberLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/number_format"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <TextView
+        android:id="@+id/btnSendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/send_verification"
+        android:textColor="@color/oxford_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPhoneNumberLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlCenterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumberLogin" />
+
+    <EditText
+        android:id="@+id/txtVerificationCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/enter_verification_code"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textColor="@color/oxford_blue"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendCode" />
+
+    <TextView
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="@string/verify"
+        android:textColor="@color/oxford_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtVerificationCode"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlCenterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtVerificationCode"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlCenterLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

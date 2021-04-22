@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="@string/progress_tracker_activity_label">
+
+    <fragment
+        android:id="@+id/ProgressTracker"
+        android:name="com.boudreau.guitarteacher.ProgressTrackerFragment"
+        android:label="@string/progress_tracker_activity_label"
+        tools:layout="@layout/progress_tracker_fragment" />
+</navigation>

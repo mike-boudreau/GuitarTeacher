@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnProgressActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ablLearnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GuitarTeacher.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bright_yellow"
+            app:popupTheme="@style/Theme.GuitarTeacher.AppBarOverlay"
+            app:title="@string/learn_to_play"
+            app:titleTextColor="@color/all_black" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLearnProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange_web"
+            app:tabIndicatorColor="@color/all_black"
+            app:tabTextColor="@color/all_black">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/itmLearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/learn" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/itmProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progress" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpgLearnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ablLearnProgress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
